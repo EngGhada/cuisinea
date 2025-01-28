@@ -79,7 +79,7 @@ if (isset($_POST['saveRecipe'])) {
 
 <form method="POST" enctype="multipart/form-data">
     <div class="mb-3">
-        <label for="title" class="form-label"">Titre</label>
+        <label for="title" class="form-label">Titre</label>
         <input type="text" name="title" id="title" class="form-control" value="<?=$recipe['title'] ;?>">
     </div>
     <div class="mb-3">
