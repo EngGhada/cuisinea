@@ -1,4 +1,5 @@
 <div class="col-md-4 my-2 d-flex">
+
     <div class="card">
         <img src="<?=getRecipeImage($recipe['image']); ?>" class="card-img-top" alt="<?= $recipe['title']; ?>">
         <div class="card-body">
@@ -7,4 +8,5 @@
             <a href="recette.php?id=<?=$recipe['id']; ?>" class="btn btn-primary">Voir la recette</a>
         </div>
     </div>
+    
 </div>

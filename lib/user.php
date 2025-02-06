@@ -1,6 +1,7 @@
 <?php
 
 function addUser(PDO $pdo, string $first_name, string $last_name, string $email, string $password) {
+    
     $sql = "INSERT INTO `users` (`first_name`, `last_name`, `email`, `password`, `role`) VALUES (:first_name, :last_name, :email, :password, :role);";
     $query = $pdo->prepare($sql);
 

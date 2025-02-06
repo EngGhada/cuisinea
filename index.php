@@ -1,12 +1,11 @@
 <?php
+
   require_once('templates/header.php');
   require_once('lib/recipe.php');
 
   $recipes = getRecipes($pdo, _HOME_RECIPES_LIMIT_);
 
 ?>
-
-
 
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
@@ -20,7 +19,6 @@
         </div>
       </div>
     </div>
-
 
 
     <div class="row">

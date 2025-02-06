@@ -18,7 +18,6 @@
         include('templates/recipe_partial.php');
       } ?>
 
-
     </div>
 
 <?php

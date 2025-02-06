@@ -31,7 +31,7 @@ function getRecipes(PDO $pdo, int $limit = null) {
     $query->execute();
     return $query->fetchAll();
 }
-
+ // Une fonction pour ajouter une nouvelle recette qui retourne true ou false
 function saveRecipe(PDO $pdo, int $category, string $title, string $description, string $ingredients, string $instructions, string|null $image) {
     $sql = "INSERT INTO `recipes` (`id`, `category_id`, `title`, `description`, `ingredients`, `instructions`, `image`) VALUES (NULL, :category_id, :title, :description, :ingredients, :instructions, :image);";
     $query = $pdo->prepare($sql);

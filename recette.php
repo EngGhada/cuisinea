@@ -8,6 +8,7 @@ $id = (int)$_GET['id'];
 $recipe = getRecipeById($pdo, $id);
 
 if ($recipe) {
+    
     $ingredients = linesToArray($recipe['ingredients']);
     $instructions = linesToArray($recipe['instructions']);
 

@@ -42,8 +42,11 @@ if (isset($_POST['saveRecipe'])) {
     }
 
     if (!$errors) {
+        //Le résultat retourné est true ou false.
         $res = saveRecipe($pdo, $_POST['category'], $_POST['title'], $_POST['description'], $_POST['ingredients'], $_POST['instructions'], $fileName);
-        
+
+        // var_dump($res); 
+
         if ($res) {
             $messages[] = 'La recette a bien été sauvegardée';
         } else {

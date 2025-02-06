@@ -1,4 +1,5 @@
 <?php
+
 require 'lib/session.php';
 
 session_destroy();

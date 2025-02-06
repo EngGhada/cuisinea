@@ -1,5 +1,7 @@
 <?php
 
+//La fonction prend une chaîne de texte et la divise en un tableau en utilisant les sauts de ligne comme séparateur.
+//The Function takes a text string and splits it into an array using line breaks as the separator.
 function linesToArray(string $string) {
     return explode(PHP_EOL, $string);
 }

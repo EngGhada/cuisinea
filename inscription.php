@@ -7,8 +7,6 @@
 
 
 
-
-
   if (isset($_POST['addUser'])) {
 
     $res = addUser($pdo, $_POST['first_name'], $_POST['last_name'], $_POST['email'], $_POST['password']);
